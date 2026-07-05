@@ -1,10 +1,10 @@
-run-name: Continuous Deployment Workflow
+run-name: CBuild a test project
 on:
   push:
     branches:
       - main
 jobs:
-  deploy:
+  build_test_project:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
